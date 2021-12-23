@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap');
+@import './vendor/reset.scss';
+@import './_vars';
+@import './mixins';
+@import './vendor/slick.scss';
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: Open Sans;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    color: $color;
+
+    background-color: $background-color;
+
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 192rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content{
+    flex: 1 0 auto;
+}
+
+.footer{
+    flex: 0 0 auto;
+}
+
+.container {
+    max-width: 111rem;
+    margin: 0 auto;
+}
+
+.container__fluid{
+    padding: 0 2.7rem
+}
+
+.h3-title {
+    @extend %font-title;
+    font-size: 3.6rem;
+    line-height: 5.1rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+@import './blocks/header.scss';
+@import './blocks/rightside.scss';
+@import './blocks/nav.scss';
+@import './blocks/burger.scss';
+@import './blocks/intro.scss';
+@import './blocks/new.scss';
+@import './blocks/tagline.scss';
+@import './blocks/works-path.scss';
+@import './blocks/gallery.scss';
+@import './blocks/blog-box.scss';
+@import './blocks/footer.scss';
+@import './blocks/breadcrumb.scss';
+@import './blocks/about.scss';
+@import './blocks/contact.scss';
+@import './blocks/form.scss';
+@import './blocks/blog.scss';
+@import './blocks/social-icons.scss';
+@import './blocks/quote.scss';
+@import './blocks/pogination.scss';
+@import './blocks/comments.scss';
+

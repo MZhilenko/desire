@@ -1,0 +1,81 @@
+.contact{
+    margin-top: 5.5rem;
+
+    &__title{
+        @extend %font-title;
+        font-size: 3.6rem;
+        line-height: 6rem;
+
+        max-width: 82.2rem;
+    }
+
+    &__line{
+        @include line(20rem);
+    }
+
+    &__info{
+        margin-left: 28.5rem;
+    }
+
+    &__text{
+        margin-top: 2rem;
+        color: #A1A1A1;
+    }
+
+    &__mail{
+        font-weight: 600;
+        font-size: 1.4rem;
+        margin-top: 1.6rem;
+
+        i{
+            margin-right: 1.4rem;
+        }
+    }
+
+    &__address{
+        margin-top: 1rem;
+    }
+
+    &__slider{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        padding: 0 2.5rem;
+        
+        &-link{
+            position: relative;
+            margin: 0 .9rem;
+            &:hover{
+                .contact__slider-title{
+                    opacity: 1;
+                }
+            }
+        }
+
+        &-img{
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 1.5rem;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            @extend %font-title;
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            text-align: center;
+
+            background-color: rgba(#fff, .6);
+            opacity: 0;
+            transition: opacity .3s ease-in;
+        }
+    }
+}

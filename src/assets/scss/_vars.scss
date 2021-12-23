@@ -1,0 +1,23 @@
+$background-color: #F2F2F2;
+$color:            #5A5A5A;
+$title-color:      #363838;
+$active-color:     #FFEF35;
+$footer-color:     #DFDFDF;
+$maxWidth:            1920px;
+$laptop-bp:           1100px;
+$tablet-bp:            920px;
+$mobile-bp:            560px;
+
+%font-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    color: $title-color;
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}

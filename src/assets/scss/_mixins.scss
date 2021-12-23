@@ -1,0 +1,15 @@
+@mixin line ($width) {
+    display: inline-block;
+    width: $width;
+    height: 1px;
+
+    background-color: #6D7278;
+    border: 0;
+}
+
+@mixin breakpoint($br) {
+    
+    @media (max-width: $br) {
+        @content
+    }
+}

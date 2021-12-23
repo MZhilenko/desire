@@ -1,0 +1,41 @@
+.tagline {
+    padding-top: 17.2rem;
+    padding-bottom: 15.6rem;
+
+    background: url(../images/tagline.jpg) no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    @include breakpoint($laptop-bp){
+        padding: 15rem 3rem;
+    }
+    @include breakpoint($tablet-bp){
+        padding: 10rem 3rem;
+    }
+}
+
+.tagline__inner {
+    max-width: 73rem;
+
+    &-title {
+        @extend %font-title;
+        font-size: 6rem;
+        line-height: 8rem;
+
+        margin-bottom: 2.2rem;
+
+        @include breakpoint($tablet-bp){
+            font-size: 4rem;
+            line-height: 6rem;
+        }
+    }
+
+    &-line {
+        @include line(20rem);
+        margin-bottom: 2.1rem;
+    }
+
+    &-desc {
+        max-width: 54rem;
+    }
+}

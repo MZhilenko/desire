@@ -1,0 +1,18 @@
+.breadcrumb{
+    background-color: rgba( #DFDFDF, .5);
+    padding: 1.4rem 0;
+    font-size: 1.4rem;
+    ul{
+        display: flex;
+
+        li:not(:first-child)::before {
+            content: "/";
+        }
+    }
+
+    &--tr{
+        position: absolute;
+        z-index: 1000;
+        background: transparent;
+    }
+}

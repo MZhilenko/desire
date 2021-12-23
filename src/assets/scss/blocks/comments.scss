@@ -1,0 +1,55 @@
+.comments{
+    margin-top: 3.5rem;
+
+    &__title{
+        @extend %font-title;
+        font-size: 2rem;
+        line-height: 3.1rem;  
+    }
+
+    &__item{
+        margin-top: 2rem;
+        display: flex;
+    }
+
+    &__top{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__avatar{
+        width: 6.4rem;
+        height: 6.4rem;
+        border-radius: 50%;
+    }
+
+    &__info{
+        margin-left: 1.3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__author{
+        @extend %font-title;
+        line-height: 2.3rem;
+    }
+
+    &__date{
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        color: #A1A1A1;
+    }
+
+    &__reply{
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        cursor: pointer;
+    }
+
+    &__text{
+        margin-top: 1rem;
+        margin-left: 1.3rem;
+        max-width: 65rem;
+    }
+}

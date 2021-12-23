@@ -1,0 +1,17 @@
+.pogination{
+    display: flex;
+    justify-content: center;
+
+    &__list{
+        display: flex;
+    }
+
+    &__num{
+        margin: 0 .6rem;
+    }
+
+    &__arrow{
+        width: .6rem;
+        height: 1.2rem;
+    }
+}

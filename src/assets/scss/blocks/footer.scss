@@ -1,0 +1,131 @@
+.footer{
+    background-color: $footer-color;
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        padding-top: 6rem;
+        padding-bottom: 8rem;
+    }
+}
+
+.footer__info{
+    max-width: 54rem;
+    @include breakpoint($tablet-bp){
+        padding-left: 1rem;
+    }
+
+    &-title{
+        @extend %font-title;
+        line-height: 2.3rem;
+        margin-bottom: 1.4rem;
+    }
+
+    &-text{
+        color: $color;
+        margin-bottom: 1.6rem;
+    }
+
+    &-mail{
+        font-weight: 600;
+        font-size: 1.4rem;
+
+        i{
+            margin-right: 1.4rem;
+        }
+    }
+}
+
+.footer__form{
+    margin-top: 2.2rem;
+    display: flex;
+
+    &-input{
+        width: 36.8rem;
+        margin-right: .9rem;
+        padding: .6rem 1rem .6rem 1.8rem;
+
+        background: transparent;
+        border-radius: 2.1rem;
+        border: 1px solid #383636;
+        @include breakpoint($mobile-bp){
+            width: 20rem;
+        }
+
+        
+        &::placeholder{
+            color: #A1A1A1
+        }
+    }
+
+    &-button{
+        width: 16rem;
+        padding: .6rem 1.2rem;
+
+        background: $title-color;
+        border-radius: 2.1rem;
+        border: 1px solid #383636;
+
+        opacity: 1;
+        color: #FFFFF0;
+        transition: all .3 linear;
+
+        @include breakpoint($mobile-bp){
+            width: 10rem;
+        }
+
+        &:hover,
+        &:focus{
+            opacity: .8;
+        }
+    }
+}
+
+.footer__social,
+.footer__menu{
+    &-item{
+        margin-bottom: 1.5rem;
+    }
+
+    &-link{
+        color: #707070;
+        transition: all .3s linear;
+        i{
+            margin-right: 1.4rem;
+        }
+
+        &:hover{
+            color: darken($color: #707070, $amount: 20%);
+        }
+    }
+}
+
+.footer__menu{
+    margin-right: 9rem;
+
+    @include breakpoint($tablet-bp){
+        width: 45%;
+        padding-left: 1rem;
+        margin: 2rem auto;
+        font-size: 1.4rem;
+    }
+}
+
+.footer__social-items{
+    @include breakpoint($tablet-bp){
+        width: 45%;
+        margin: 2rem auto;
+        padding-left: 1rem;
+        font-size: 1.4rem;
+    }
+}
+
+.footer__copyright{
+    padding: 4.2rem;
+    text-align: center;
+
+    background-color: $title-color;
+    color: #A1A1A1;
+}

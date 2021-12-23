@@ -1,0 +1,11 @@
+.social__icons{
+    display: flex;
+    justify-content: space-between;
+    max-width: 28.4rem;
+
+    margin-top: 4rem;
+
+    &--sm{
+        max-width: 15.5rem;
+    }
+}
